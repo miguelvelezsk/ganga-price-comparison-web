@@ -33,7 +33,7 @@ export default function SearchBar({ setProductSearch, productSearch }: SearchBar
             <div className="flex flex-col items-start justify-center w-full gap-3 mt-10 mb-5">
                 <h1 className="font-header text-primary font-semibold text-2xl md:text-4xl mb-5">Encuentra el mejor precio para tus productos</h1>
                 <div className="flex items-center h-16 w-full md:w-2/4 h-14 px-1 pr-4 text-sm md:text-lg border border-neutral rounded-[0.5rem] bg-tertiary overflow-hidden">
-                    <input placeholder="Buscar productos..." value={productName} className="w-full h-full px-4 outline-none bg-transparent placeholder:text-neutral" type="text" onChange={(e) => setProductName(e.target.value)} onKeyDown={handleKeyDown} />
+                    <input placeholder="Buscar productos..." value={productName} className="w-full text-primary  h-full px-4 outline-none bg-transparent placeholder:text-neutral" type="text" onChange={(e) => setProductName(e.target.value)} onKeyDown={handleKeyDown} />
                     {productName.length > 0 && (
                         <button
                             onClick={handleClear}
