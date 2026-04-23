@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="w-full flex flex-col lg:flex-row items-center justify-between mx-auto">
                 <span className="text-lg font-bold font-header text-primary">Ganga</span>
 
-                <div className="flex gap-4 lg:ml-46 sm:ml-0 sm:mt-5 ">
+                <div className="flex gap-4 mt-5 sm:ml-0 lg:mt-0 lg:ml-46">
                     <a href="https://github.com/miguelvelezsk" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="text-primary/80 hover:text-primary transition-colors cursor-pointer" size={30} />
                     </a>
@@ -15,7 +15,7 @@ export default function Footer() {
                     </a>
                 </div>
 
-                <div className='sm:mt-5'>
+                <div className='text-center mt-5 lg:mt-0'>
                     <span className="text-md font-header text-primary/80 ">@ 2026 Ganga App. Minimalist Excellence</span>
                 </div>
 
