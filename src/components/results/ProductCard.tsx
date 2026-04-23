@@ -22,14 +22,14 @@ export default function ProductCard({ product }: ProductCardProps) {
                                     <Star className="" size={20} /> {product.rating}</p>}
                         </div>
                     </div>
-                    <CardTitle className="w-full h-10 object-cover text-xl text-primary">{product.title}</CardTitle>
+                    <CardTitle className="w-full line-clamp-2 object-cover text-xl text-primary">{product.title}</CardTitle>
                 </div>
             </CardHeader>
             <CardContent className="p-0 h-3">
                 <p className="text-secondary font-bold">{product.shipping !== 'Información no disponible' && product.shipping}</p>
             </CardContent>
             <CardFooter className="flex justify-between text-primary w-full p-2 mt-5">
-                <p className="text-3xl font-semibold">{formatCurrency(product.price)} <span className="text-base">COP</span></p>
+                <p className="text-2xl md:text-3xl lg:text-3xl font-semibold">{formatCurrency(product.price)} <span className="text-base">COP</span></p>
                 <a href={product.link} target="_blank" rel="noopener noreferrer">
                     <SquareArrowOutUpRight size={30} className="cursor-pointer pt-1 hover:text-secondary hover:scale-105 transition-all duration-300" />
                 </a>
